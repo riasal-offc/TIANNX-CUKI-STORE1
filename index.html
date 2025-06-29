@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIANNX CUKI STORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .motto {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        h2 {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .product-category {
+            margin-bottom: 30px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: auto;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        .whatsapp-btn i {
+            font-style: normal;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .testimonial-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px solid #ddd;
+        }
+        .testimonial-link {
+            display: inline-block;
+            background-color: #0088cc;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .testimonial-link:hover {
+            background-color: #006699;
+        }
+        .testimonial-link i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TIANNX CUKI STORE</h1>
+        <div class="motto">"dagangan ini hasil do'a ibu"</div>
+        
+        <div class="contact-info">
+            Contact Owner: <a href="https://wa.me/6287774843487" target="_blank">6287774843487</a>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="testimonial-section">
+            <h2>Customer Testimonials</h2>
+            <p>See what our customers say about our products and services:</p>
+            <a href="https://t.me/testimnitian" class="testimonial-link" target="_blank">
+                <i>📢</i> View Testimonials on Telegram
+            </a>
+        </div>
+        
+        <div class="product-category">
+            <h2>Panel Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-name">[PANEL 1GB]</div>
+                    <div class="product-price">1K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 1GB] 1K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 2GB]</div>
+                    <div class="product-price">2K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 2GB] 2K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 3GB]</div>
+                    <div class="product-price">3K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 3GB] 3K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 4GB]</div>
+                    <div class="product-price">4K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 4GB] 4K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 5GB]</div>
+                    <div class="product-price">6K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 5GB] 6K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 6GB]</div>
+                    <div class="product-price">7K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 6GB] 7K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 7GB]</div>
+                    <div class="product-price">8K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 7GB] 8K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 8GB]</div>
+                    <div class="product-price">9K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 8GB] 9K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 9GB]</div>
+                    <div class="product-price">10K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 9GB] 10K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL 10GB]</div>
+                    <div class="product-price">11K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL 10GB] 11K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PANEL UNLI]</div>
+                    <div class="product-price">12K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PANEL UNLI] 12K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h2>Bug Services</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-name">[JASBUG]</div>
+                    <div class="product-price">5K</div>
+                    <div class="note">1 Nomor</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [JASBUG] 5K 1NOMOR')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[JASBUG VIP]</div>
+                    <div class="product-price">10K</div>
+                    <div class="note">1 Nomor</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [JASBUG VIP] 10K 1 NOMOR')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[MURBUG]</div>
+                    <div class="product-price">25K</div>
+                    <div class="note">Permanen</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [MURBUG] 25K PERMANEN')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PARTENER PRIBADI]</div>
+                    <div class="product-price">140K-160K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PARTENER PRIBADI] 140K-160K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h2>SC Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-name">[SC VOID VIA TELE]</div>
+                    <div class="product-price">70K-220K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC VOID VIA TELE] 70K-220K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC STELLAR LIGHT]</div>
+                    <div class="product-price">45K-160K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC STELLAR LIGHT] 45K-160K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC IMVIER INVINITY]</div>
+                    <div class="product-price">60K-250K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC IMVIER INVINITY] 60K-250K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC XCERBERUS]</div>
+                    <div class="product-price">50K-250K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC XCERBERUS] 50K-250K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC THENDER VORTEX]</div>
+                    <div class="product-price">50K-200K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC THENDER VORTEX] 50K-200K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC HEVAIS HADES]</div>
+                    <div class="product-price">75K-320K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC HEVAIS HADES] 75K-320K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC TIANNX INVICTUS]</div>
+                    <div class="product-price">40K-100K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC TIANNX INVICTUS] 40K-100K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC DEAT NOTE]</div>
+                    <div class="product-price">45K-150K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC DEAT NOTE] 45K-150K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[SC REXUS]</div>
+                    <div class="product-price">50K-100K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [SC REXUS] 50K-100K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h2>RESS/PT SC</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-name">[RESS SC HEFAISTOS]</div>
+                    <div class="product-price">140K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [RESS SC HEFAISTOS] 140k')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PT SC HEFAISTOS]</div>
+                    <div class="product-price">170K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PT SC HEFAISTOS] 170k')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[RESS SC IMVIER]</div>
+                    <div class="product-price">130K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [RESS SC IMVIER] 130k')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[RESS SC DEAT NOTE]</div>
+                    <div class="product-price">70K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [RESS SC DEAT NOTE] 70k')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[PT SC TIANNX INVICTUS]</div>
+                    <div class="product-price">140K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [PT SC TIANNX INVICTUS] 140K')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+                <div class="product-item">
+                    <div class="product-name">[RESS SC THUNDER VORTEX]</div>
+                    <div class="product-price">120K</div>
+                    <button class="whatsapp-btn" onclick="redirectToWhatsApp('Halo, saya ingin membeli [RESS SC THUNDER VORTEX] 120k')">
+                        <i>🛒</i> Beli via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Contact us for purchases or more information</p>
+            <p>&copy; 2023 TIANNX CUKI STORE. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function redirectToWhatsApp(productMessage) {
+            const phoneNumber = "6287774843487";
+            const message = encodeURIComponent(productMessage);
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+  </html>
